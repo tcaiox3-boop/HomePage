@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Cabeçalho */
+.cabecalho-site {
+  background: #011b2b;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.menu-principal ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.menu-principal a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu-principal a:hover {
+  text-decoration: underline;
+}
+
+/* Seção de introdução */
+.secao-introducao {
+  padding: 2rem;
+  text-align: center;
+}
+.lista-cartoes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.cartao {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  flex: 1 1 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.cartao:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.botao-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #011b2b;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.botao-link:hover {
+  background: #004466;
+}
+
+/* Fotos da introdução  */
+.lista-cartoes .cartao img {
+  width: 100%;
+  max-width: 250px;
+  height: 300px;       
+  object-fit: cover;   
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Seções de perfil */
+.secao-perfil {
+  padding: 2rem;
+  border-top: 1px solid #ddd;
+}
+.secao-perfil h2 {
+  margin-bottom: 1rem;
+}
+
+/* Fotos de perfil */
+.foto-perfil {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 1rem auto;
+  display: block;
+}
+
+/* Formulário */
+.formulario-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+  margin: 1rem 0;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Botão do formulário */
+.formulario-contato button {
+  padding: 0.7rem;
+  background: #011b2b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.formulario-contato button:hover {
+  background: #004466;
+}
+
+/* Rodapé */
+.rodape-site {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+.rodape-site p {
+  margin: 0.3rem 0; 
+}
+
+#caixa-sucesso {
+  margin-top: 1rem;
+}
+#mensagem-sucesso {
+  font-weight: bold;
+  color: green;
+}
+
+/* Botão voltar ao topo */
+#botaoTopo {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.7rem 1rem;
+  background: #011b2b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+#botaoTopo:hover {
+  background: #004466;
+}
+
